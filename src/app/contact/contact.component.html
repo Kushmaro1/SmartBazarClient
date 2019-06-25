@@ -1,0 +1,48 @@
+
+
+
+<div class="grid-container">
+  <h1 class="mat-h1">Send us an Email !</h1>
+<table class="example-full-width" cellspacing="0"><tr>
+  <td><mat-form-field class="example-full-width">
+    <input matInput placeholder="First name">
+  </mat-form-field></td>
+  <td><mat-form-field class="example-full-width">
+    <input matInput placeholder="Last Name">
+  </mat-form-field></td>
+</tr>
+<tr>
+  <td>
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Address">
+  </mat-form-field>
+</td>
+<td>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Email">
+    </mat-form-field>
+  </td>
+</tr>
+
+</table>
+<table class="example-full-width" cellspacing="0"><tr>
+  <td><mat-form-field class="example-full-width">
+    <input matInput placeholder="City">
+  </mat-form-field></td>
+  <td><mat-form-field class="example-full-width">
+    <input matInput placeholder="Country">
+  </mat-form-field></td>
+  <td><mat-form-field class="example-full-width">
+    <input matInput #postalCode maxlength="5" placeholder="Postal Code" >
+    <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+  </mat-form-field></td>
+</tr></table>
+<mat-form-field class="example-full-width">
+  <textarea matInput placeholder="Remarks"></textarea>
+</mat-form-field>
+<div class="example-button-row">
+    <a mat-raised-button routerLink="/"  color="primary">Submit</a>
+  </div>
+  
+  
+</div>
